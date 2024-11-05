@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvryrwe8aarpi"]
+
+[ext_resource type="Script" path="res://Menu/Fim/win.gd" id="1_4chbk"]
+[ext_resource type="Texture2D" uid="uid://dunn406lxqhnk" path="res://Menu/Destaque-Skibidi-Toilet-removebg-preview.png" id="2_r0ugh"]
+[ext_resource type="FontFile" uid="uid://gbxk5s4beoji" path="res://Menu/The Screaming.ttf" id="3_nwp85"]
+[ext_resource type="AudioStream" uid="uid://c2dou1f2joem3" path="res://sounds/Epic Win-SOUND EFFECT (HD)-YOU FREE AUDIO ｜ NO COPYRIGHT AUDIO FOR YOUTUBE CREATORS.mp3" id="4_y1no7"]
+
+[node name="Win" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4chbk")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Skibidi" type="TextureRect" parent="ColorRect"]
+modulate = Color(0.360784, 0.360784, 0.360784, 1)
+self_modulate = Color(1, 1, 1, 0.384314)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 571.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_r0ugh")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -388.0
+offset_top = 42.0
+offset_right = 393.0
+offset_bottom = 112.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_nwp85")
+theme_override_font_sizes/font_size = 66
+text = "PARABENS VOCÊ ESCAPOU DO SKIBIDI"
+
+[node name="menu_btn" type="Button" parent="."]
+layout_mode = 0
+anchor_left = 0.25434
+anchor_top = 0.845679
+anchor_right = 0.422743
+anchor_bottom = 0.942901
+theme_override_colors/font_color = Color(1, 0.47451, 0.47451, 1)
+theme_override_fonts/font = ExtResource("3_nwp85")
+theme_override_font_sizes/font_size = 45
+text = "menu"
+metadata/_edit_use_anchors_ = true
+
+[node name="credits_btn" type="Button" parent="."]
+layout_mode = 0
+anchor_left = 0.585069
+anchor_top = 0.848765
+anchor_right = 0.752604
+anchor_bottom = 0.945988
+theme_override_colors/font_color = Color(1, 0.47451, 0.47451, 1)
+theme_override_fonts/font = ExtResource("3_nwp85")
+theme_override_font_sizes/font_size = 40
+text = "CREDITOS"
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_y1no7")
+volume_db = -7.495
+autoplay = true
+
+[connection signal="pressed" from="menu_btn" to="." method="_on_menu_btn_pressed"]
+[connection signal="pressed" from="credits_btn" to="." method="_on_credits_btn_pressed"]

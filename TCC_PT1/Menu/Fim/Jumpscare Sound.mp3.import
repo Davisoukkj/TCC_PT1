@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wo7mh61hqdjr"
+path="res://.godot/imported/Jumpscare Sound.mp3-0464512d8a402fa3e412b1e176d94ce8.mp3str"
+
+[deps]
+
+source_file="res://Menu/Fim/Jumpscare Sound.mp3"
+dest_files=["res://.godot/imported/Jumpscare Sound.mp3-0464512d8a402fa3e412b1e176d94ce8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=3 uid="uid://3hhm3ur0lmll"]
+
+[ext_resource type="Script" path="res://Menu/Fim/jump_scare.gd" id="1_a0krk"]
+[ext_resource type="AudioStream" uid="uid://wo7mh61hqdjr" path="res://Menu/Fim/Jumpscare Sound.mp3" id="2_a8tvh"]
+[ext_resource type="FontFile" uid="uid://gbxk5s4beoji" path="res://Menu/The Screaming.ttf" id="3_dm0tx"]
+[ext_resource type="Texture2D" uid="uid://dunn406lxqhnk" path="res://Menu/Destaque-Skibidi-Toilet-removebg-preview.png" id="4_ifqmn"]
+
+[node name="Jump_Scare" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a0krk")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_a8tvh")
+autoplay = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Back_btn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 59.0
+offset_right = 223.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(1, 0.47451, 0.47451, 1)
+theme_override_fonts/font = ExtResource("3_dm0tx")
+theme_override_font_sizes/font_size = 30
+text = "VOLTAR PARA O MENU"
+
+[node name="Destaque-skibidi-toilet-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(582, 432)
+scale = Vector2(3.5585, 2.6655)
+texture = ExtResource("4_ifqmn")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -54.0
+offset_top = -140.0
+offset_right = 57.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.780392, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_dm0tx")
+theme_override_font_sizes/font_size = 101
+text = "FIM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Back_btn" to="." method="_on_back_btn_pressed"]
