@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8udhpxchlqd7"]
+
+[ext_resource type="Texture2D" uid="uid://5ubv1in4ivgr" path="res://textures/Poliigon_BrickWallReclaimed_8320/2K/Poliigon_BrickWallReclaimed_8320_BaseColor.jpg" id="1_8c8qr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iqg6b"]
+albedo_texture = ExtResource("1_8c8qr")
+uv1_scale = Vector3(3.85, 3.85, 3.85)
+
+[sub_resource type="BoxMesh" id="BoxMesh_snq55"]
+material = SubResource("StandardMaterial3D_iqg6b")
+size = Vector3(20, 8, 1)
+
+[node name="Tiles" type="Node"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.78893, 0)
+mesh = SubResource("BoxMesh_snq55")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.442921, 3.78893, 14.7258)
+mesh = SubResource("BoxMesh_snq55")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14.1759, 3.78893, 14.7258)
+mesh = SubResource("BoxMesh_snq55")

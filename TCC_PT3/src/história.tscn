@@ -1,0 +1,104 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1h8dwklciyk8"]
+
+[ext_resource type="FontFile" uid="uid://gbxk5s4beoji" path="res://Menu/The Screaming.ttf" id="1_1ql1k"]
+[ext_resource type="Script" path="res://scripts/história.gd" id="1_whr7a"]
+[ext_resource type="Texture2D" uid="uid://dunn406lxqhnk" path="res://Menu/Destaque-Skibidi-Toilet-removebg-preview.png" id="3_1mhbp"]
+[ext_resource type="AudioStream" uid="uid://r4spkl8njcvc" path="res://sounds/y2meta.com - Horror Ambience Sound Effect (128 kbps).mp3" id="4_sg6ts"]
+
+[node name="História" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_whr7a")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -94.5
+offset_top = 75.0
+offset_right = 94.5
+offset_bottom = 160.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.917647, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_1ql1k")
+theme_override_font_sizes/font_size = 81
+text = "Historia"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -324.0
+offset_top = -136.5
+offset_right = 324.0
+offset_bottom = 178.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.94902, 0.454902, 0.454902, 1)
+theme_override_fonts/font = ExtResource("1_1ql1k")
+theme_override_font_sizes/font_size = 31
+text = "No dia 20 de novembro de 2016, você um  youtuber de aventuras
+decide explorar uma fabrica abandonada perto de sua cidade,
+na intenção de gravar um bom conteudo. Contudo durante a 
+exploração você encontra documentos militares e escuta 
+oque parecia ser uma musica vindo da
+parte subteranea da fabrica, então ele vai checar porém acaba
+caindo em um grande buraco.
+Agora você está preso neste lugar estranho e tem que achar 
+uma maneira de escapar."
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -116.0
+offset_top = -48.0
+offset_right = 116.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.854902, 0, 0, 1)
+text = "Aperte ENTER para prosseguir"
+
+[node name="Skibidi" type="TextureRect" parent="."]
+modulate = Color(0.360784, 0.360784, 0.360784, 1)
+self_modulate = Color(1, 1, 1, 0.172549)
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 571.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_1mhbp")
+expand_mode = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_sg6ts")
+volume_db = -5.622
+autoplay = true

@@ -1,0 +1,90 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgyhe11wsnn87"]
+
+[ext_resource type="Script" path="res://scripts/pause_menu.gd" id="1_g8m3a"]
+[ext_resource type="FontFile" uid="uid://gbxk5s4beoji" path="res://Menu/The Screaming.ttf" id="1_tx6vs"]
+
+[node name="Pause_menu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g8m3a")
+
+[node name="background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 647.0
+color = Color(0, 0, 0, 0.254902)
+
+[node name="pause_text" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -104.0
+offset_top = 86.0
+offset_right = 104.0
+offset_bottom = 169.0
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0.870588, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_tx6vs")
+theme_override_font_sizes/normal_font_size = 70
+text = "PAUSADO"
+
+[node name="resume_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.0
+offset_top = -15.0
+offset_right = 105.0
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.996078, 0, 0.0117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_tx6vs")
+theme_override_font_sizes/font_size = 30
+text = "CONTINUAR"
+
+[node name="menu_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.0
+offset_top = 56.0
+offset_right = 105.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.996078, 0, 0.0117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_tx6vs")
+theme_override_font_sizes/font_size = 32
+text = "MENU"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 495.0
+offset_top = 174.0
+offset_right = 651.0
+offset_bottom = 288.0
+theme_override_colors/font_color = Color(1, 0.176471, 0.129412, 1)
+theme_override_fonts/font = ExtResource("1_tx6vs")
+theme_override_font_sizes/font_size = 34
+text = "Andar: W A S D
+Isqueiro: F
+Pular: Espaço"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="resume_button" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="menu_button" to="." method="_on_menu_button_pressed"]

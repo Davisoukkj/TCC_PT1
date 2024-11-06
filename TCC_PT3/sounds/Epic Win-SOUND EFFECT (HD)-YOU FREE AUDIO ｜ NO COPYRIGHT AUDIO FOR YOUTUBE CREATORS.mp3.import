@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2dou1f2joem3"
+path="res://.godot/imported/Epic Win-SOUND EFFECT (HD)-YOU FREE AUDIO ｜ NO COPYRIGHT AUDIO FOR YOUTUBE CREATORS.mp3-4cff7593bf5a8285981a2f11b01ed26b.mp3str"
+
+[deps]
+
+source_file="res://sounds/Epic Win-SOUND EFFECT (HD)-YOU FREE AUDIO ｜ NO COPYRIGHT AUDIO FOR YOUTUBE CREATORS.mp3"
+dest_files=["res://.godot/imported/Epic Win-SOUND EFFECT (HD)-YOU FREE AUDIO ｜ NO COPYRIGHT AUDIO FOR YOUTUBE CREATORS.mp3-4cff7593bf5a8285981a2f11b01ed26b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
