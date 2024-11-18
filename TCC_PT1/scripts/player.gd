@@ -25,6 +25,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 func _ready(): #MOUSE PRESO NA TELA
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
 
 func _input(event): #PRIMEIRA PESSOA
 	if (event is InputEventMouseMotion):

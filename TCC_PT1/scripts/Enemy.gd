@@ -3,7 +3,7 @@ extends CharacterBody3D
 
 
 
-const SPEED = 160.0
+const SPEED = 170.0
 const CHASE_RANGE = 5000.0
 
 @export var target : CharacterBody3D

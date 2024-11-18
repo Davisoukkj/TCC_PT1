@@ -17,7 +17,7 @@ func _on_exit_btn_pressed():
 
 
 func _on_start_btn_pressed():
-	get_tree().change_scene_to_file("res://src/história.tscn")
+	get_tree().change_scene_to_file("res://src/LVNORMAL/história.tscn")
 
 func _on_credits_btn_pressed():
 

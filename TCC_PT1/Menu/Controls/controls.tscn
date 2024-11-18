@@ -34,7 +34,8 @@ theme_override_fonts/font = ExtResource("2_r2qmn")
 theme_override_font_sizes/font_size = 76
 text = "ANDAR: W A S D
 ISQUEIRO: f
-PULAR: ESPAÇO"
+PULAR: ESPAÇO
+PAUSE: Shift"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -100,9 +101,20 @@ stream = ExtResource("5_k4m74")
 volume_db = -5.622
 autoplay = true
 
-[node name="DesignSemNome(3)" type="Sprite2D" parent="."]
-position = Vector2(423, 584)
-scale = Vector2(0.0981482, 0.10162)
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -225.0
+offset_top = -135.0
+offset_right = 855.0
+offset_bottom = 945.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.127029, 0.126148)
 texture = ExtResource("6_8f10x")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
